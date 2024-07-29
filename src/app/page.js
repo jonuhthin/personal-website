@@ -2,10 +2,12 @@
 import Link from 'next/link'
 import RepositoryContext from './RepositoryProvider'
 import { useContext, useEffect, useState } from 'react'
-const apiUrl = 'https://api.github.com/'
 
 const getRepos = async () => {
-  const resp = await fetch(apiUrl + 'users/jonuhthin/repos')
+  console.log(process.env.API_URL)
+  const resp = await fetch(
+    `${process.env.API_URL}/${process.env.USERNAME}/repos`
+  )
   const repos = await resp.json()
   return repos
 }
@@ -18,7 +20,7 @@ export default function RepoList() {
 
   const { setRepository } = useContext(RepositoryContext)
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-start justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4">
           Projects
