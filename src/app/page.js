@@ -6,7 +6,6 @@ import { useContext, useEffect, useState } from 'react'
 const getRepos = async () => {
   const resp = await fetch(`/api/repositories`)
   const repos = await resp.json()
-  console.log(repos)
   return repos
 }
 
@@ -16,6 +15,7 @@ export default function RepoList() {
     getRepos().then((repos) => setRepos(repos))
   }, [])
 
+  console.log(repos)
   const { setRepository } = useContext(RepositoryContext)
   return (
     <main className="flex min-h-screen flex-col items-start justify-between p-24">
