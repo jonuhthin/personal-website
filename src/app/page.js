@@ -4,11 +4,9 @@ import RepositoryContext from './RepositoryProvider'
 import { useContext, useEffect, useState } from 'react'
 
 const getRepos = async () => {
-  console.log(process.env.API_URL)
-  const resp = await fetch(
-    `${process.env.API_URL}/${process.env.USERNAME}/repos`
-  )
+  const resp = await fetch(`/api/repositories`)
   const repos = await resp.json()
+  console.log(repos)
   return repos
 }
 
