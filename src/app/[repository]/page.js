@@ -1,21 +1,22 @@
 'use client'
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Description from './description'
 import Title from './title'
 import RepositoryContext, { RepositoryProvider } from '../RepositoryProvider'
+// import Showdown from 'showdown'
 
 const getREADME = async (repository) => {
-  const content = await fetch(
-    `${process.env.API_URL}/${process.env.USERNAME}/repos`
-  )
+  const content = await fetch(`/api/${repository}/readme`)
+  const text = await content.text()
+  return text
 }
 
-export default function Details() {
-  const { repository } = useContext(RepositoryContext)
-  return (
-    <>
-      <Title titleText={repository.name} />
-      <Description descriptionText={repository.description} />
-    </>
-  )
+export default function Details({ params }) {
+  const [content, setContent] = useState(<p>nothing to see here.</p>)
+  useEffect(() => {
+    getREADME(params.repository).then((c) => setContent(c))
+    return () => setContent()
+  }, [])
+  console.log(content)
+  return <div dangerouslySetInnerHTML={{ __html: content }} />
 }
