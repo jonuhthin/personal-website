@@ -18,14 +18,15 @@ export default function RepoList() {
   console.log(repos)
   const { setRepository } = useContext(RepositoryContext)
   return (
-    <main className="flex min-h-screen flex-col items-start justify-between p-24">
+    <main className="flex min-h-screen flex-col items-start justify-start p-24 gap-10">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4">
+        <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto lg:p-4 lg:pl-0 lowercase font-semibold">
           Projects
         </p>
       </div>
       {repos.map((repository) => (
         <Link
+          className="hover:scale-105 ease-in duration-300"
           key={repository.name}
           onClick={() => {
             console.log('setting repo', repository)

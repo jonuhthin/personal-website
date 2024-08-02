@@ -1,8 +1,8 @@
-import { Inter } from 'next/font/google'
+import { Fira_Code } from 'next/font/google'
 import './globals.css'
 import { RepositoryProvider } from './RepositoryProvider'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Fira_Code({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Jonathan's Portfolio",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <RepositoryProvider>{children}</RepositoryProvider>
       </body>
     </html>
