@@ -8,6 +8,7 @@ export async function GET(req, { params }) {
       },
     }
   )
+
   //TODO: error handling if no readme
-  return resp
+  return resp.status == '404' ? new Response(undefined) : resp
 }

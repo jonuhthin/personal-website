@@ -1,84 +1,84 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+.readme html,
+.readme body,
+.readme div,
+.readme span,
+.readme applet,
+.readme object,
+.readme iframe,
+.readme h1,
+.readme h2,
+.readme h3,
+.readme h4,
+.readme h5,
+.readme h6,
+.readme p,
+.readme blockquote,
+.readme pre,
+.readme a,
+.readme abbr,
+.readme acronym,
+.readme address,
+.readme big,
+.readme cite,
+.readme code,
+.readme del,
+.readme dfn,
+.readme em,
+.readme img,
+.readme ins,
+.readme kbd,
+.readme q,
+.readme s,
+.readme samp,
+.readme small,
+.readme strike,
+.readme strong,
+.readme sub,
+.readme sup,
+.readme tt,
+.readme var,
+.readme b,
+.readme u,
+.readme i,
+.readme center,
+.readme dl,
+.readme dt,
+.readme dd,
+.readme ol,
+.readme ul,
+.readme li,
+.readme fieldset,
+.readme form,
+.readme label,
+.readme legend,
+.readme table,
+.readme caption,
+.readme tbody,
+.readme tfoot,
+.readme thead,
+.readme tr,
+.readme th,
+.readme td,
+.readme article,
+.readme aside,
+.readme canvas,
+.readme details,
+.readme embed,
+.readme figure,
+.readme figcaption,
+.readme footer,
+.readme header,
+.readme hgroup,
+.readme menu,
+.readme nav,
+.readme output,
+.readme ruby,
+.readme section,
+.readme summary,
+.readme time,
+.readme mark,
+.readme audio,
+.readme video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -87,74 +87,74 @@ video {
   vertical-align: baseline;
 }
 
-html {
+.readme html {
   line-height: 1;
 }
 
-ol,
-ul {
+.readme ol,
+.readme ul {
   list-style: none;
 }
 
-table {
+.readme table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-caption,
-th,
-td {
+.readme caption,
+.readme th,
+.readme td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q,
-blockquote {
+.readme q,
+.readme blockquote {
   quotes: none;
 }
 
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
+.readme q:before,
+.readme q:after,
+.readme blockquote:before,
+.readme blockquote:after {
   content: '';
   content: none;
 }
 
-a img {
+.readme a img {
   border: none;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+.readme article,
+.readme aside,
+.readme details,
+.readme figcaption,
+.readme figure,
+.readme footer,
+.readme header,
+.readme hgroup,
+.readme main,
+.readme menu,
+.readme nav,
+.readme section,
+.readme summary {
   display: block;
 }
 
-* {
+.readme * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html {
+.readme html {
   font-size: 16px;
   line-height: 1.6em;
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+.readme body {
   background-color: #fff;
   color: #545454;
 
@@ -167,7 +167,7 @@ body {
   padding: 1.6em 3.15em;
 }
 
-h1 {
+.readme h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: #333;
@@ -176,7 +176,7 @@ h1 {
   margin-bottom: 0.78571em;
 }
 
-h2 {
+.readme h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: #333;
@@ -186,7 +186,7 @@ h2 {
   margin-bottom: 0.6em;
 }
 
-h3 {
+.readme h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   color: #333;
@@ -196,7 +196,7 @@ h3 {
   margin-bottom: 0.6em;
 }
 
-h4 {
+.readme h4 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   color: #333;
@@ -206,24 +206,24 @@ h4 {
   margin-bottom: 0.6em;
 }
 
-p {
+.readme p {
   margin-bottom: 1.57143em;
   hyphens: auto;
 }
 
-b,
-strong {
+.readme b,
+.readme strong {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
-i,
-em {
+.readme i,
+.readme em {
   font-family: 'Raleway', sans-serif;
   font-style: italic;
 }
 
-u {
+.readme u {
   text-decoration: none;
   background-image: linear-gradient(
     to bottom,
@@ -235,21 +235,21 @@ u {
   background-position: 0 1.05em;
 }
 
-s {
+.readme s {
   color: #878787;
 }
 
-a {
+.readme a {
   color: #e74c3c;
   text-decoration: none;
 }
 
-img {
+.readme img {
   max-width: 100%;
   height: auto;
 }
 
-blockquote {
+.readme blockquote {
   display: block;
   margin-left: -1em;
   padding-left: 0.8em;
@@ -257,7 +257,7 @@ blockquote {
   background-color: transparent;
 }
 
-hr {
+.readme hr {
   height: 1px;
   border: 0;
   background-color: #dedede;
@@ -266,51 +266,51 @@ hr {
 
 /* LISTS */
 
-ul li {
+.readme ul li {
   /* text-indent: -0.45em; */
 }
 
-ul li:before {
-  content: '*';
+.readme ul li:before {
+  content: '•';
   color: #e74c3c;
   display: inline-block;
   margin-right: 0.3em;
   vertical-align: middle;
 }
 
-ul ul {
+.readme ul ul {
   margin-left: 1.25714em;
 }
 
-ol li {
+.readme ol li {
   /* text-indent: -1.45em; */
 }
 
-ol ol {
+.readme ol ol {
   margin-left: 1.25714em;
 }
 
-ul,
-ol {
+.readme ul,
+.readme ol {
   margin-bottom: 1.5em;
 }
 
-ul ul,
-ul ol,
-ol ul,
-ol ol {
+.readme ul ul,
+.readme ul ol,
+.readme ol ul,
+.readme ol ol {
   margin-bottom: 0;
 }
 
-ol {
+.readme ol {
   counter-reset: ol;
 }
 
-ol li {
+.readme ol li {
   counter-increment: ol;
 }
 
-ol li:before {
+.readme ol li:before {
   content: counter(ol) '.';
   color: #e06e73;
   text-align: right;
@@ -319,12 +319,12 @@ ol li:before {
   margin-right: 0.5em;
 }
 
-ol li p {
+.readme ol li p {
   display: inline;
 }
 
 /* CODE */
-code {
+.readme code {
   display: inline;
   background: #fcfcfc;
   border: 1px solid #dedede;
@@ -334,14 +334,14 @@ code {
   font-size: 1.2em;
 }
 
-pre {
+.readme pre {
   display: block;
   background: transparent;
   padding: 0;
   margin: 0;
 }
 
-pre code {
+.readme pre code {
   display: block;
   width: 100%;
   line-height: 1.45em;
@@ -356,7 +356,7 @@ pre code {
 
 /* TODO LIST */
 
-input[type='checkbox'] {
+.readme input[type='checkbox'] {
   position: relative;
   width: 1rem;
   height: 1rem;
@@ -371,7 +371,7 @@ input[type='checkbox'] {
   page-break-after: avoid;
 }
 
-input[type='checkbox']:checked::before {
+.readme input[type='checkbox']:checked::before {
   display: block;
   content: '✓';
   display: initial;
@@ -383,17 +383,17 @@ input[type='checkbox']:checked::before {
   bottom: -0.2em;
 }
 
-input[type='checkbox'] ~ label {
+.readme input[type='checkbox'] ~ label {
   display: block;
   width: 100%;
   margin-bottom: 0.1em;
 }
 
-ul li input[type='checkbox'] {
+.readme ul li input[type='checkbox'] {
   font: none;
 }
 
-ul li input[type='checkbox'] ~ label {
+.readme ul li input[type='checkbox'] ~ label {
   display: inline-block;
   width: auto;
   margin-bottom: 0.1em;
@@ -402,27 +402,27 @@ ul li input[type='checkbox'] ~ label {
 
 /*  TABLE */
 
-table {
+.readme table {
   width: calc(100% + 3em);
   margin-bottom: 1.5em;
   margin-left: -1.5em;
 }
 
-table tr {
+.readme table tr {
   border-bottom: 1px solid #dedede;
 }
 
-table th {
+.readme table th {
   font-weight: 700;
 }
 
-table td,
-table th {
+.readme table td,
+.readme table th {
   vertical-align: top;
   padding: 0.2em 1.5em;
   font-size: 0.95em;
 }
 
-thead tr {
+.readme thead tr {
   border-bottom: 4px double #dedede;
 }

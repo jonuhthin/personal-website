@@ -4,11 +4,9 @@ export async function GET(req, { params }) {
     {
       headers: {
         Authorization: 'Bearer ' + process.env.GH_TOKEN,
-        Accept: 'application/vnd.github+json',
+        Accept: 'application/vnd.github.raw+json',
       },
     }
   )
-  const json = await resp.json()
-  console.log(json)
-  return new Response(json.status === '404' ? undefined : atob(json.content))
+  return resp.status == '404' ? new Response('{}') : resp
 }
