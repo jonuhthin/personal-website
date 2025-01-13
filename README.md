@@ -22,3 +22,28 @@ Structure:
       - Results/improvements
     - Files
   - ...
+
+Tables:
+
+- project
+  - id
+  - status
+  - name
+  - description
+  - reasoning
+  - goals
+  - process
+  - bom
+  - conclusion
+  - files
+  - video_link
+  - web_link
+- tag
+  - id
+  - name
+- project_tags
+  - project_id
+  - tag_id
+- status
+  - id
+  - name

@@ -1,6 +1,6 @@
 import { Fira_Code } from 'next/font/google'
 import './globals.css'
-import { RepositoryProvider } from './RepositoryProvider'
+import { ProjectProvider } from './ProjectProvider'
 
 const font = Fira_Code({ subsets: ['latin'] })
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${font.className} flex`}>
-        <RepositoryProvider>{children}</RepositoryProvider>
+        <ProjectProvider>{children}</ProjectProvider>
       </body>
     </html>
   )

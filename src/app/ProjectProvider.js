@@ -3,10 +3,10 @@ import { createContext, useState } from 'react'
 
 export const Context = createContext()
 
-export function RepositoryProvider({ children }) {
-  const [repository, setRepository] = useState()
+export function ProjectProvider({ children }) {
+  const [project, setProject] = useState()
   return (
-    <Context.Provider value={{ repository, setRepository }}>
+    <Context.Provider value={{ project, setProject }}>
       {children}
     </Context.Provider>
   )
