@@ -50,8 +50,9 @@ export const ImageCarousel = ({ src, alt, ...props }) => {
 export const EmbedCarousel = ({ list }) => {
   return (
     <div className="carousel rounded-box">
-      {list.map((embed) => (
+      {list.map((embed, index) => (
         <div
+          key={index}
           className="carousel-item aspect-w-9 aspect-h-16 bg-opacity-0 rounded"
           dangerouslySetInnerHTML={{ __html: embed }}
         ></div>
